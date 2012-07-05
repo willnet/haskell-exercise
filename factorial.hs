@@ -1,2 +1,3 @@
-factorial :: Integer -> Integer
-factorial n = product [1..n]
+factorial :: Int -> Int
+factorial 0 = 1
+factorial n = n * factorial (n - 1)
